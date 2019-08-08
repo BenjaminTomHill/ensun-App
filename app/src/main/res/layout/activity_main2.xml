@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFE"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".Main2Activity">
+
+    <Button
+        android:id="@+id/problem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="3dp"
+        android:text="Problem"
+        app:layout_constraintEnd_toStartOf="@+id/team"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="4dp"
+        android:text="Team"
+        app:layout_constraintEnd_toStartOf="@+id/konzept"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/problem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/konzept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:text="Konzept"
+        app:layout_constraintEnd_toStartOf="@+id/news"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/team"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:text="News"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/konzept"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="204dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/team"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoensun" />
+
+    <EditText
+        android:id="@+id/businessFragen"
+        android:layout_width="359dp"
+        android:layout_height="621dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/problem"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="61dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Back"
+        app:layout_constraintBottom_toTopOf="@+id/problem"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/frage1"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/konzept" />
+
+    <EditText
+        android:id="@+id/antwort1"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frage1" />
+
+    <TextView
+        android:id="@+id/frage2"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/antwort1" />
+
+    <EditText
+        android:id="@+id/antwort2"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frage2" />
+
+    <TextView
+        android:id="@+id/frage3"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/antwort2" />
+
+    <EditText
+        android:id="@+id/antwort3"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frage3" />
+
+    <TextView
+        android:id="@+id/frage4"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/antwort3" />
+
+    <EditText
+        android:id="@+id/antwort4"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frage4" />
+
+    <TextView
+        android:id="@+id/frage5"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/antwort4" />
+
+    <EditText
+        android:id="@+id/antwort5"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/businessFragen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frage5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/mehr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="Anzeigen"
+        app:layout_constraintBottom_toTopOf="@+id/antwort1"
+        app:layout_constraintEnd_toEndOf="@+id/antwort1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/antwort1"
+        app:layout_constraintTop_toTopOf="@+id/frage1" />
+
+    <RadioButton
+        android:id="@+id/mehr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="268dp"
+        android:layout_marginBottom="8dp"
+        android:text="Anzeigen"
+        app:layout_constraintBottom_toTopOf="@+id/antwort2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/antwort2"
+        app:layout_constraintTop_toTopOf="@+id/frage2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/mehr3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Anzeigen"
+        app:layout_constraintBottom_toTopOf="@+id/antwort3"
+        app:layout_constraintEnd_toEndOf="@+id/antwort3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/antwort3"
+        app:layout_constraintTop_toTopOf="@+id/frage3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/mehr4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Anzeigen"
+        app:layout_constraintBottom_toTopOf="@+id/antwort4"
+        app:layout_constraintEnd_toEndOf="@+id/antwort4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/antwort4"
+        app:layout_constraintTop_toTopOf="@+id/frage4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/weiterlesen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Lesen"
+        app:layout_constraintBottom_toTopOf="@+id/frage2"
+        app:layout_constraintEnd_toEndOf="@+id/antwort1"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="@+id/antwort1"
+        app:layout_constraintTop_toTopOf="@+id/antwort1"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <RadioButton
+        android:id="@+id/weiterlesen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Lesen"
+        app:layout_constraintBottom_toTopOf="@+id/frage3"
+        app:layout_constraintEnd_toEndOf="@+id/antwort2"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="@+id/antwort2"
+        app:layout_constraintTop_toBottomOf="@+id/frage2"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <RadioButton
+        android:id="@+id/weiterlesen3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Lesen"
+        app:layout_constraintBottom_toTopOf="@+id/frage4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="@+id/businessFragen"
+        app:layout_constraintTop_toBottomOf="@+id/frage3"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <RadioButton
+        android:id="@+id/weiterlesen4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Lesen"
+        app:layout_constraintBottom_toTopOf="@+id/frage5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="@+id/antwort4"
+        app:layout_constraintTop_toBottomOf="@+id/frage4"
+        app:layout_constraintVertical_bias="0.35000002" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
